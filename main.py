@@ -1,7 +1,10 @@
+%pip install langchain-openai langchain-google-genai
+import os 
+os.environ["OPENAI_API_KEY"]= st.secrets['OPENAI_API_KEY']
 
+os.environ['GOOGLE_API_KEY'] = st.secrets['GOOGLE_API_KEY']
 from langchain_openai import ChatOpenAI
 pplx_model=ChatOpenAI(model="llama-3.1-sonar-small-128k-online",
-                      openai_api_key="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",
                       openai_api_base="https://api.perplexity.ai"
 )
 from langchain import PromptTemplate
