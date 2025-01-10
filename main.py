@@ -1,4 +1,3 @@
-pip install langchain-openai  streamlit
 import os 
 os.environ["OPENAI_API_KEY"]= st.secrets['OPENAI_API_KEY']
 
