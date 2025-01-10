@@ -3,7 +3,8 @@ os.environ["OPENAI_API_KEY"]= st.secrets['PPLX_API_KEY']
 
 from langchain_openai import ChatOpenAI
 pplx_model=ChatOpenAI(model="llama-3.1-sonar-small-128k-online",
-                      openai_api_base="https://api.perplexity.ai"
+                      openai_api_key='PPLX_API_KEY',
+                      openai_base_url="https://api.perplexity.ai"
 )
 from langchain import PromptTemplate
 
