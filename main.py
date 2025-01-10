@@ -1,5 +1,5 @@
 import os 
-os.environ["OPENAI_API_KEY"]= st.secrets['OPENAI_API_KEY']
+os.environ["OPENAI_API_KEY"]= st.secrets['PPLX_API_KEY']
 
 from langchain_openai import ChatOpenAI
 pplx_model=ChatOpenAI(model="llama-3.1-sonar-small-128k-online",
