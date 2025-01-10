@@ -1,4 +1,4 @@
-%pip install langchain-openai langchain-google-genai
+%pip install langchain-openai langchain-google-genai streamlit
 import os 
 os.environ["OPENAI_API_KEY"]= st.secrets['OPENAI_API_KEY']
 
